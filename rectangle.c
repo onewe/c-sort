@@ -69,7 +69,7 @@ void del(Rectangle* rec){
 void swap(Rectangle* src,Rectangle* target){
 	drawArrow(src,target);
 	draw(target,true);
-	sleep(1);
+	usleep(1000 * 500);
 	delArrow(src,target);
 	int srcX = src->x;
 	int targetX = target->x;
